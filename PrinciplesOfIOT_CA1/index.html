@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>1 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script> 
+    <script src="http://dweet.io/client/dweet.io.min.js"></script> 
+    <script src="js/createChart.js"></script>
+    <script src="js/displayCharts.js"></script>
+    <script src="js/LocalData.js"></script>
+    <script language="JavaScript">
+    window.setInterval(function() {
+    localData = JSON.parse(window.localStorage.getItem('Data'));
+		showCharts(localData);
+	}, 5000);
+    
+     </script>
+  </head>
+
+  <body>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4">Principles of IoT: CA1
+        <small>Shane Ryan - x15745561</small>
+      </h1>
+
+      <!-- Project One -->
+      <div class="row" style="height:350px">
+        <div class="col-md-7" id="soundchart">
+        </div>
+        <div class="col-md-5">
+          <h3>Sound Measurements</h3>
+          <p>This chart records the sound measurements taken by the sound sensor connected to  the A0 port</p>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Two -->
+      <div class="row" style="height:350px">
+        <div class="col-md-7" id="voltagechart">
+        </div>
+        <div class="col-md-5">
+          <h3>Voltage Measurements</h3>
+          <p>This chart records the voltage measurement selected by the user when turning the rotary-angle sensor.</p>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Three -->
+      <div class="row" style="height:350px">
+        <div class="col-md-7" id="lightchart">
+        </div>
+        <div class="col-md-5">
+          <h3>Light Measurements</h3>
+          <p>This chart shows the light measurements taken from the raspberry pi sensor connected to port A1.</p>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Project Four -->
+      <div class="row" style="height:350px">
+
+        <div class="col-md-7" id ="ledchart">
+        </div>
+        <div class="col-md-5">
+          <h3>Brightness Setting</h3>
+          <p>This shows the brightness setting given to the LED bulb as selected by the rotary angle sensor.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row" style="height:350px">
+
+        <div class="col-md-7" id ="potentchart">
+        </div>
+        <div class="col-md-5">
+          <h3>Potentiometer Reading</h3>
+          <p>This shows the potentiometer reading given from the rotary angle sensor.</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row" style="height:350px">
+
+        <div class="col-md-7" id ="degreeschart">
+        </div>
+        <div class="col-md-5">
+          <h3>Degrees Rotation</h3>
+          <p>This shows the degrees of rotation the rotary angle sensor has been turned 0-300</p>
+        </div>
+      </div>
+
+      <!-- /.row -->
+      <hr>
+
+
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Shane Ryan x15745561 &copy; IoT:CA1</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- custom highcharts scripts-->
+  </body>
+
+</html>
